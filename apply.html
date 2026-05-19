@@ -71,19 +71,21 @@
           <div class="form-group"><label for="appWebsite">Website</label><input type="url" id="appWebsite" name="website" placeholder="https://"></div>
         </div>
 
-        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Membership Level</h3>
-        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">Select the level that corresponds to your company's annual gross sales.</p>
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Annual Gross Sales Volume</h3>
+        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">National dues are based on your company's annual gross sales. Please select the range that applies. <span class="req">*</span></p>
         <div class="form-group">
-          <div class="tier-select">
-            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="standard" required> <strong>Standard — $999</strong><span class="tier-desc">1 ASLA Affiliate Membership included</span></label>
-            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="silver"> <strong>Silver — $1,499</strong><span class="tier-desc">2 ASLA Affiliate Memberships included</span></label>
-            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="gold"> <strong>Gold — $1,999</strong><span class="tier-desc">3 ASLA Affiliate Memberships included</span></label>
-            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="platinum"> <strong>Platinum — $2,499</strong><span class="tier-desc">4 ASLA Affiliate Memberships included</span></label>
-          </div>
+          <select id="grossSales" name="grossSales" required>
+            <option value="">Select your gross sales range...</option>
+            <option value="under-500k">Under $500,000 — $999 dues</option>
+            <option value="500k-1m">$500,000 – $999,999 — $999 dues</option>
+            <option value="1m-5m">$1,000,000 – $4,999,999 — $1,499 dues</option>
+            <option value="5m-10m">$5,000,000 – $9,999,999 — $1,999 dues</option>
+            <option value="10m-plus">$10,000,000+ — $2,499 dues</option>
+          </select>
         </div>
 
         <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Professional Practice Networks</h3>
-        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">Select up to 3 PPNs depending on your membership level (Standard: 1, Silver: 2, Gold/Platinum: 3).</p>
+        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">Select up to 3 PPNs depending on your dues level. Number of included PPNs increases with higher gross sales tiers.</p>
         <div class="form-group">
           <div class="checkbox-grid">
             <label class="checkbox-label"><input type="checkbox" name="ppn" value="campus-planning"> Campus Planning and Design</label>
@@ -185,7 +187,9 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label for="aff1Phone">Phone</label><input type="tel" id="aff1Phone" name="aff1Phone"></div>
-            <div class="form-group"><label for="aff1Chapter">ASLA Chapter</label><input type="text" id="aff1Chapter" name="aff1Chapter"></div>
+            <div class="form-group"><label for="aff1Chapter">ASLA Chapter</label>
+              <select id="aff1Chapter" name="aff1Chapter"><option value="">Select a chapter...</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA-N">California Northern</option><option value="CA-SD">California San Diego</option><option value="CA-SI">California Sierra</option><option value="CA-S">California Southern</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware (PA/DE Chapter)</option><option value="DC">District of Columbia (Potomac)</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho (ID/MT Chapter)</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas (Prairie Gateway)</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine (Boston Chapter)</option><option value="MD">Maryland (Potomac)</option><option value="MA">Massachusetts (Boston)</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri (Prairie Gateway)</option><option value="MO-STL">Missouri (St. Louis)</option><option value="MT">Montana (ID/MT Chapter)</option><option value="NE">Nebraska (NE/Dakotas)</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NY-UP">New York Upstate</option><option value="NC">North Carolina</option><option value="ND">North Dakota (NE/Dakotas)</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania (PA/DE)</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota (NE/Dakotas)</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="VA-DC">Virginia (Potomac)</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming (Colorado)</option></select>
+            </div>
           </div>
           <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff1SameAddr" value="yes"> Address is the same as Company Address</label>
         </div>
@@ -198,7 +202,9 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label for="aff2Phone">Phone</label><input type="tel" id="aff2Phone" name="aff2Phone"></div>
-            <div class="form-group"><label for="aff2Chapter">ASLA Chapter</label><input type="text" id="aff2Chapter" name="aff2Chapter"></div>
+            <div class="form-group"><label for="aff2Chapter">ASLA Chapter</label>
+              <select id="aff2Chapter" name="aff2Chapter"><option value="">Select a chapter...</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA-N">California Northern</option><option value="CA-SD">California San Diego</option><option value="CA-SI">California Sierra</option><option value="CA-S">California Southern</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware (PA/DE Chapter)</option><option value="DC">District of Columbia (Potomac)</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho (ID/MT Chapter)</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas (Prairie Gateway)</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine (Boston Chapter)</option><option value="MD">Maryland (Potomac)</option><option value="MA">Massachusetts (Boston)</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri (Prairie Gateway)</option><option value="MO-STL">Missouri (St. Louis)</option><option value="MT">Montana (ID/MT Chapter)</option><option value="NE">Nebraska (NE/Dakotas)</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NY-UP">New York Upstate</option><option value="NC">North Carolina</option><option value="ND">North Dakota (NE/Dakotas)</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania (PA/DE)</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota (NE/Dakotas)</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="VA-DC">Virginia (Potomac)</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming (Colorado)</option></select>
+            </div>
           </div>
           <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff2SameAddr" value="yes"> Address is the same as Company Address</label>
         </div>
@@ -211,7 +217,9 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label for="aff3Phone">Phone</label><input type="tel" id="aff3Phone" name="aff3Phone"></div>
-            <div class="form-group"><label for="aff3Chapter">ASLA Chapter</label><input type="text" id="aff3Chapter" name="aff3Chapter"></div>
+            <div class="form-group"><label for="aff3Chapter">ASLA Chapter</label>
+              <select id="aff3Chapter" name="aff3Chapter"><option value="">Select a chapter...</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA-N">California Northern</option><option value="CA-SD">California San Diego</option><option value="CA-SI">California Sierra</option><option value="CA-S">California Southern</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware (PA/DE Chapter)</option><option value="DC">District of Columbia (Potomac)</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho (ID/MT Chapter)</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas (Prairie Gateway)</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine (Boston Chapter)</option><option value="MD">Maryland (Potomac)</option><option value="MA">Massachusetts (Boston)</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri (Prairie Gateway)</option><option value="MO-STL">Missouri (St. Louis)</option><option value="MT">Montana (ID/MT Chapter)</option><option value="NE">Nebraska (NE/Dakotas)</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NY-UP">New York Upstate</option><option value="NC">North Carolina</option><option value="ND">North Dakota (NE/Dakotas)</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania (PA/DE)</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota (NE/Dakotas)</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="VA-DC">Virginia (Potomac)</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming (Colorado)</option></select>
+            </div>
           </div>
           <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff3SameAddr" value="yes"> Address is the same as Company Address</label>
         </div>
@@ -224,7 +232,9 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label for="aff4Phone">Phone</label><input type="tel" id="aff4Phone" name="aff4Phone"></div>
-            <div class="form-group"><label for="aff4Chapter">ASLA Chapter</label><input type="text" id="aff4Chapter" name="aff4Chapter"></div>
+            <div class="form-group"><label for="aff4Chapter">ASLA Chapter</label>
+              <select id="aff4Chapter" name="aff4Chapter"><option value="">Select a chapter...</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA-N">California Northern</option><option value="CA-SD">California San Diego</option><option value="CA-SI">California Sierra</option><option value="CA-S">California Southern</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware (PA/DE Chapter)</option><option value="DC">District of Columbia (Potomac)</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho (ID/MT Chapter)</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas (Prairie Gateway)</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine (Boston Chapter)</option><option value="MD">Maryland (Potomac)</option><option value="MA">Massachusetts (Boston)</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri (Prairie Gateway)</option><option value="MO-STL">Missouri (St. Louis)</option><option value="MT">Montana (ID/MT Chapter)</option><option value="NE">Nebraska (NE/Dakotas)</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NY-UP">New York Upstate</option><option value="NC">North Carolina</option><option value="ND">North Dakota (NE/Dakotas)</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania (PA/DE)</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota (NE/Dakotas)</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="VA-DC">Virginia (Potomac)</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming (Colorado)</option></select>
+            </div>
           </div>
           <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff4SameAddr" value="yes"> Address is the same as Company Address</label>
         </div>
@@ -250,12 +260,13 @@
 
       <div class="contact-sidebar">
         <div class="contact-card">
-          <h4>Membership Levels</h4>
+          <h4>Dues by Gross Sales</h4>
           <div class="tier-info">
-            <div><strong>Standard — $999</strong><br><small>1 Affiliate Membership</small></div>
-            <div><strong>Silver — $1,499</strong><br><small>2 Affiliate Memberships</small></div>
-            <div><strong>Gold — $1,999</strong><br><small>3 Affiliate Memberships</small></div>
-            <div><strong>Platinum — $2,499</strong><br><small>4 Affiliate Memberships</small></div>
+            <div><strong>Under $500K</strong> — $999/year<br><small>1 Affiliate Membership included</small></div>
+            <div><strong>$500K – $999K</strong> — $999/year<br><small>1 Affiliate Membership included</small></div>
+            <div><strong>$1M – $4.99M</strong> — $1,499/year<br><small>2 Affiliate Memberships included</small></div>
+            <div><strong>$5M – $9.99M</strong> — $1,999/year<br><small>3 Affiliate Memberships included</small></div>
+            <div><strong>$10M+</strong> — $2,499/year<br><small>4 Affiliate Memberships included</small></div>
           </div>
         </div>
         <div class="contact-card">
@@ -288,8 +299,8 @@
 <script>
 document.getElementById('applyForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  var level = document.querySelector('input[name="memberLevel"]:checked');
-  if (!level) { alert('Please select a membership level.'); return; }
+  var sales = document.getElementById('grossSales').value;
+  if (!sales) { alert('Please select your annual gross sales range.'); return; }
   alert('Thank you for your application! Our team will contact you within 2 business days to finalize your membership and arrange payment.');
 });
 </script>
