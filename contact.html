@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — ASLA</title>
+  <meta name="description" content="Contact the ASLA Development Team about advertising, exhibiting, sponsorships, and corporate membership opportunities.">
+  <link rel="stylesheet" href="../colors_and_type.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="../assets/logos/asla-mark-waves-white.svg" alt="ASLA" height="36"><span class="logo-text">ASLA</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown"><a href="advertising.html">Advertising</a><ul class="dropdown"><li><a href="advertising.html#lam-advertising">LAM Print</a></li><li><a href="advertising.html#ad-rates">Rates</a></li><li><a href="advertising.html#editorial-calendar">Editorial Calendar</a></li><li><a href="advertising.html#digital-engagement">Digital</a></li><li><a href="advertising.html#website-advertising">Website Ads</a></li></ul></li>
+        <li class="has-dropdown"><a href="expo.html">EXPO</a><ul class="dropdown"><li><a href="expo.html#why-exhibit">Why Exhibit?</a></li><li><a href="expo.html#exhibitor-pricing">Pricing</a></li><li><a href="expo.html#exhibitor-resources">Resources</a></li></ul></li>
+        <li><a href="sponsorships.html">Sponsorships</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero page-hero-dark">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--asla-green)">Let's Talk</p>
+    <h1 style="color:var(--white)">Contact Our Development Team</h1>
+    <p class="body-lg" style="color:rgba(255,255,255,0.8)">Tell us about your marketing goals and we'll help you find the right mix of opportunities.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <form class="contact-form" id="contactForm" action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group"><label for="firstName">First Name <span class="req">*</span></label><input type="text" id="firstName" name="firstName" required></div>
+          <div class="form-group"><label for="lastName">Last Name <span class="req">*</span></label><input type="text" id="lastName" name="lastName" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+          <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="company">Company <span class="req">*</span></label><input type="text" id="company" name="company" required></div>
+          <div class="form-group"><label for="title">Job Title</label><input type="text" id="title" name="title"></div>
+        </div>
+        <div class="form-group"><label for="website">Website</label><input type="url" id="website" name="website" placeholder="https://"></div>
+
+        <div class="form-group">
+          <label>I'm interested in: <span class="req">*</span></label>
+          <div class="checkbox-grid">
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="lam-print"> LAM Print Advertising</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="digital"> Digital Advertising</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="social"> Social Media Partnership</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="newsletter"> Newsletter Advertising</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="product-directory"> Product Directory</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="expo"> EXPO Exhibiting</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="sponsorship"> Conference Sponsorship</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="online-sponsorship"> Online Education Sponsorship</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="corporate-membership"> Corporate Membership</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="sme-video"> Subject Matter Expert Video</label>
+            <label class="checkbox-label"><input type="checkbox" name="interest" value="custom"> Custom / Multi-Channel Package</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="budget">Estimated Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range...</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-15k">$5,000 – $15,000</option>
+              <option value="15k-30k">$15,000 – $30,000</option>
+              <option value="30k-50k">$30,000 – $50,000</option>
+              <option value="50k-plus">$50,000+</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timeline">When are you looking to start?</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select a timeline...</option>
+              <option value="asap">As soon as possible</option>
+              <option value="1-3months">Within 1–3 months</option>
+              <option value="3-6months">Within 3–6 months</option>
+              <option value="next-year">Planning for next year</option>
+              <option value="exploring">Just exploring options</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals, target audience, or any specific opportunities you're interested in..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Send Inquiry</button>
+      </form>
+
+      <div class="contact-sidebar">
+        <div class="contact-card">
+          <h4>Development Team</h4>
+          <div class="team-member"><strong>Daniel Martin</strong>, Honorary ASLA<br>Managing Director, Development<br><a href="tel:2022162356">202-216-2356</a><br><a href="mailto:dmartin@asla.org">dmartin@asla.org</a></div>
+          <div class="team-member"><strong>Monica Barkley</strong><br>Sales Manager<br><a href="tel:2022167853">202-216-7853</a><br><a href="mailto:barkley@asla.org">barkley@asla.org</a></div>
+          <div class="team-member"><strong>Robert Reed</strong><br>Sales Manager<br><a href="tel:2022162327">202-216-2327</a><br><a href="mailto:rreed@asla.org">rreed@asla.org</a></div>
+          <div class="team-member"><strong>Kathleen Thomas</strong><br>Sales Manager<br><a href="tel:2022162363">202-216-2363</a><br><a href="mailto:kthomas@asla.org">kthomas@asla.org</a></div>
+        </div>
+        <div class="contact-card">
+          <h4>Production &amp; Exhibits</h4>
+          <div class="team-member"><strong>Laura Iverson</strong><br>Senior Production Manager<br><a href="tel:2022162341">202-216-2341</a><br><a href="mailto:liverson@asla.org">liverson@asla.org</a></div>
+          <div class="team-member"><strong>Judy Mehlman</strong><br>Development Manager<br><a href="tel:2022162366">202-216-2366</a><br><a href="mailto:jmehlman@asla.org">jmehlman@asla.org</a></div>
+          <div class="team-member"><strong>Michelle Mobley</strong><br>Manager, Exhibits &amp; Sponsorship<br><a href="tel:2022162377">202-216-2377</a><br><a href="mailto:mmobley@asla.org">mmobley@asla.org</a></div>
+          <div class="team-member"><strong>Lydia Thompson</strong><br>Marketing Manager<br><a href="tel:2022162320">202-216-2320</a><br><a href="mailto:lthompson@asla.org">lthompson@asla.org</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand"><img src="../assets/logos/asla-mark-waves-white.svg" alt="ASLA" height="36"><p>American Society of Landscape Architects<br>636 Eye Street NW, Washington, DC 20001</p></div>
+    <div class="footer-links">
+      <div><h5>Opportunities</h5><ul><li><a href="advertising.html">LAM Advertising</a></li><li><a href="advertising.html#digital-engagement">Digital Engagement</a></li><li><a href="expo.html">EXPO / Exhibit</a></li><li><a href="sponsorships.html">Sponsorships</a></li><li><a href="membership.html">Corporate Membership</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="advertising.html#editorial-calendar">Editorial Calendar</a></li><li><a href="advertising.html#ad-rates">Advertising Rates</a></li><li><a href="expo.html#exhibitor-resources">Exhibitor Resources</a></li><li><a href="advertising.html#product-directory">Product Directory</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="https://www.asla.org">ASLA.org</a></li><li><a href="https://www.landscapearchitecturemagazine.org">LAM Online</a></li><li><a href="https://www.facebook.com/americansocietyoflandscapearchitects">Facebook</a></li><li><a href="https://www.linkedin.com/company/american-society-of-landscape-architects/">LinkedIn</a></li><li><a href="https://www.instagram.com/nationalasla">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 American Society of Landscape Architects. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var checks = document.querySelectorAll('input[name="interest"]:checked');
+  if (checks.length === 0) { alert('Please select at least one area of interest.'); return; }
+  alert('Thank you for your inquiry! Our team will be in touch within 1-2 business days.');
+});
+</script>
+</body>
+</html>
