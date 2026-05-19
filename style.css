@@ -46,7 +46,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo img { display: block; }
+.logo img { display: block; height: 28px; width: auto; }
 .logo-text {
   font-family: var(--font-sans);
   font-weight: 700;
@@ -773,7 +773,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
 }
 .footer-inner {}
 .footer-brand { margin-bottom: var(--space-2xl); }
-.footer-brand img { margin-bottom: var(--space-md); }
+.footer-brand img { margin-bottom: var(--space-md); height: 28px; width: auto; }
 .footer-brand p { font-size: 14px; line-height: 1.6; }
 .footer-links {
   display: grid;
