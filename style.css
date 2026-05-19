@@ -70,6 +70,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   background: var(--asla-green) !important;
   color: var(--asla-teal) !important;
   font-weight: 700 !important;
+  white-space: nowrap;
 }
 .nav-cta:hover { background: var(--asla-green-light) !important; }
 
