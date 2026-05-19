@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Membership Application — ASLA</title>
+  <meta name="description" content="Apply for ASLA Corporate Membership. Complete this form to join and gain access to 16,000+ landscape architecture professionals.">
+  <link rel="stylesheet" href="colors_and_type.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logos/asla-full-green-white.png" alt="American Society of Landscape Architects" height="22"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown"><a href="advertising.html">Advertising</a><ul class="dropdown"><li><a href="advertising.html#lam-advertising">LAM Print</a></li><li><a href="advertising.html#ad-rates">Rates</a></li><li><a href="advertising.html#editorial-calendar">Editorial Calendar</a></li><li><a href="advertising.html#digital-engagement">Digital</a></li><li><a href="advertising.html#website-advertising">Website Ads</a></li></ul></li>
+        <li class="has-dropdown"><a href="expo.html">EXPO</a><ul class="dropdown"><li><a href="expo.html#why-exhibit">Why Exhibit?</a></li><li><a href="expo.html#exhibitor-pricing">Pricing</a></li><li><a href="expo.html#exhibitor-resources">Resources</a></li></ul></li>
+        <li><a href="sponsorships.html">Sponsorships</a></li>
+        <li><a href="membership.html" class="active">Membership</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero page-hero-dark">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--asla-green)">Corporate Membership</p>
+    <h1 style="color:var(--white)">Membership Application</h1>
+    <p class="body-lg" style="color:rgba(255,255,255,0.8)">Complete the form below to apply for ASLA Corporate Membership. Our team will follow up within 2 business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <form class="contact-form" id="applyForm" action="#" method="POST">
+
+        <h3 style="margin-bottom:var(--space-lg)">Application Type</h3>
+        <div class="form-group">
+          <div class="checkbox-grid" style="grid-template-columns:1fr 1fr">
+            <label class="radio-label"><input type="radio" name="appType" value="new" checked> New Membership</label>
+            <label class="radio-label"><input type="radio" name="appType" value="renewal"> Renewal</label>
+          </div>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-lg)">Company Information</h3>
+        <div class="form-group"><label for="companyName">Company Name <span class="req">*</span></label><input type="text" id="companyName" name="companyName" required></div>
+        <div class="form-row">
+          <div class="form-group"><label for="contactName">Contact Name <span class="req">*</span></label><input type="text" id="contactName" name="contactName" required></div>
+          <div class="form-group"><label for="positionTitle">Position Title <span class="req">*</span></label><input type="text" id="positionTitle" name="positionTitle" required></div>
+        </div>
+        <div class="form-group"><label for="address1">Address Line 1 <span class="req">*</span></label><input type="text" id="address1" name="address1" required></div>
+        <div class="form-group"><label for="address2">Address Line 2</label><input type="text" id="address2" name="address2"></div>
+        <div class="form-row" style="grid-template-columns:2fr 1fr 1fr">
+          <div class="form-group"><label for="city">City <span class="req">*</span></label><input type="text" id="city" name="city" required></div>
+          <div class="form-group"><label for="state">State <span class="req">*</span></label><input type="text" id="state" name="state" required></div>
+          <div class="form-group"><label for="zip">Zip <span class="req">*</span></label><input type="text" id="zip" name="zip" required></div>
+        </div>
+        <div class="form-group"><label for="country">Country</label><input type="text" id="country" name="country" value="United States"></div>
+        <div class="form-row">
+          <div class="form-group"><label for="appPhone">Phone <span class="req">*</span></label><input type="tel" id="appPhone" name="phone" required></div>
+          <div class="form-group"><label for="fax">Fax</label><input type="tel" id="fax" name="fax"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="appEmail">Email <span class="req">*</span></label><input type="email" id="appEmail" name="email" required></div>
+          <div class="form-group"><label for="appWebsite">Website</label><input type="url" id="appWebsite" name="website" placeholder="https://"></div>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Membership Level</h3>
+        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">Select the level that corresponds to your company's annual gross sales.</p>
+        <div class="form-group">
+          <div class="tier-select">
+            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="standard" required> <strong>Standard — $999</strong><span class="tier-desc">1 ASLA Affiliate Membership included</span></label>
+            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="silver"> <strong>Silver — $1,499</strong><span class="tier-desc">2 ASLA Affiliate Memberships included</span></label>
+            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="gold"> <strong>Gold — $1,999</strong><span class="tier-desc">3 ASLA Affiliate Memberships included</span></label>
+            <label class="radio-label tier-option"><input type="radio" name="memberLevel" value="platinum"> <strong>Platinum — $2,499</strong><span class="tier-desc">4 ASLA Affiliate Memberships included</span></label>
+          </div>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Professional Practice Networks</h3>
+        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">Select up to 3 PPNs depending on your membership level (Standard: 1, Silver: 2, Gold/Platinum: 3).</p>
+        <div class="form-group">
+          <div class="checkbox-grid">
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="campus-planning"> Campus Planning and Design</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="childrens-outdoor"> Children's Outdoor Environments</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="community-design"> Community Design</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="design-build"> Design-Build</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="digital-technology"> Digital Technology</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="ecology-restoration"> Ecology and Restoration</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="education-practice"> Education and Practice</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="environmental-justice"> Environmental Justice</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="healthcare-therapeutic"> Healthcare and Therapeutic Design</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="historic-preservation"> Historic Preservation</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="international-practice"> International Practice</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="landscape-planning"> Landscape/Land Use Planning</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="parks-recreation"> Parks and Recreation</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="planting-design"> Planting Design</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="residential"> Residential Landscape Architecture</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="sustainable-design"> Sustainable Design and Development</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="transportation"> Transportation</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="urban-design"> Urban Design</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="water-conservation"> Water Conservation</label>
+            <label class="checkbox-label"><input type="checkbox" name="ppn" value="women-in-la"> Women in Landscape Architecture</label>
+          </div>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">ASLA Chapter</h3>
+        <div class="form-group">
+          <label for="chapter">Preferred ASLA Chapter</label>
+          <select id="chapter" name="chapter">
+            <option value="">Select a chapter...</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA-N">California Northern</option>
+            <option value="CA-SD">California San Diego</option>
+            <option value="CA-SI">California Sierra</option>
+            <option value="CA-S">California Southern</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware (PA/DE Chapter)</option>
+            <option value="DC">District of Columbia (Potomac Chapter)</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho (ID/MT Chapter)</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas (Prairie Gateway Chapter)</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine (Boston Chapter)</option>
+            <option value="MD">Maryland (Potomac Chapter)</option>
+            <option value="MA">Massachusetts (Boston Chapter)</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri (Prairie Gateway Chapter)</option>
+            <option value="MO-STL">Missouri (St. Louis Chapter)</option>
+            <option value="MT">Montana (ID/MT Chapter)</option>
+            <option value="NE">Nebraska (NE/Dakotas Chapter)</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NY-UP">New York Upstate</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota (NE/Dakotas Chapter)</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania (PA/DE Chapter)</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota (NE/Dakotas Chapter)</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="VA-DC">Virginia (Potomac Chapter)</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming (Colorado Chapter)</option>
+          </select>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Affiliate Member Information</h3>
+        <p style="font-size:14px;color:var(--fg2);margin-bottom:var(--space-lg)">The number of ASLA Affiliate Memberships included depends on your level. Additional affiliates must pay chapter dues.</p>
+
+        <div class="affiliate-block">
+          <h4>Affiliate Member 1</h4>
+          <div class="form-row">
+            <div class="form-group"><label for="aff1Name">Name</label><input type="text" id="aff1Name" name="aff1Name"></div>
+            <div class="form-group"><label for="aff1Email">Email</label><input type="email" id="aff1Email" name="aff1Email"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="aff1Phone">Phone</label><input type="tel" id="aff1Phone" name="aff1Phone"></div>
+            <div class="form-group"><label for="aff1Chapter">ASLA Chapter</label><input type="text" id="aff1Chapter" name="aff1Chapter"></div>
+          </div>
+          <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff1SameAddr" value="yes"> Address is the same as Company Address</label>
+        </div>
+
+        <div class="affiliate-block">
+          <h4>Affiliate Member 2</h4>
+          <div class="form-row">
+            <div class="form-group"><label for="aff2Name">Name</label><input type="text" id="aff2Name" name="aff2Name"></div>
+            <div class="form-group"><label for="aff2Email">Email</label><input type="email" id="aff2Email" name="aff2Email"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="aff2Phone">Phone</label><input type="tel" id="aff2Phone" name="aff2Phone"></div>
+            <div class="form-group"><label for="aff2Chapter">ASLA Chapter</label><input type="text" id="aff2Chapter" name="aff2Chapter"></div>
+          </div>
+          <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff2SameAddr" value="yes"> Address is the same as Company Address</label>
+        </div>
+
+        <div class="affiliate-block">
+          <h4>Affiliate Member 3</h4>
+          <div class="form-row">
+            <div class="form-group"><label for="aff3Name">Name</label><input type="text" id="aff3Name" name="aff3Name"></div>
+            <div class="form-group"><label for="aff3Email">Email</label><input type="email" id="aff3Email" name="aff3Email"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="aff3Phone">Phone</label><input type="tel" id="aff3Phone" name="aff3Phone"></div>
+            <div class="form-group"><label for="aff3Chapter">ASLA Chapter</label><input type="text" id="aff3Chapter" name="aff3Chapter"></div>
+          </div>
+          <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff3SameAddr" value="yes"> Address is the same as Company Address</label>
+        </div>
+
+        <div class="affiliate-block">
+          <h4>Affiliate Member 4</h4>
+          <div class="form-row">
+            <div class="form-group"><label for="aff4Name">Name</label><input type="text" id="aff4Name" name="aff4Name"></div>
+            <div class="form-group"><label for="aff4Email">Email</label><input type="email" id="aff4Email" name="aff4Email"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="aff4Phone">Phone</label><input type="tel" id="aff4Phone" name="aff4Phone"></div>
+            <div class="form-group"><label for="aff4Chapter">ASLA Chapter</label><input type="text" id="aff4Chapter" name="aff4Chapter"></div>
+          </div>
+          <label class="checkbox-label" style="margin-top:var(--space-sm)"><input type="checkbox" name="aff4SameAddr" value="yes"> Address is the same as Company Address</label>
+        </div>
+
+        <h3 style="margin-top:var(--space-2xl);margin-bottom:var(--space-md)">Additional Information</h3>
+        <div class="form-group">
+          <label for="aslaFund">ASLA Fund Contribution (Optional)</label>
+          <input type="text" id="aslaFund" name="aslaFund" placeholder="$0.00">
+          <small style="color:var(--fg2)">Deductible as a charitable contribution as allowed by law.</small>
+        </div>
+        <div class="form-group">
+          <label for="appNotes">Notes or Questions</label>
+          <textarea id="appNotes" name="notes" rows="3" placeholder="Any additional information or questions..."></textarea>
+        </div>
+
+        <div class="form-notice">
+          <p>Corporate membership is not transferable or refundable. Dues are billed annually. Add $65 for postage if your mailing address is outside the U.S. and its territories.</p>
+          <p>Upon submission, our team will contact you to finalize your membership and arrange payment. Accepted payment methods include check, American Express, Discover, MasterCard, and Visa.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+      </form>
+
+      <div class="contact-sidebar">
+        <div class="contact-card">
+          <h4>Membership Levels</h4>
+          <div class="tier-info">
+            <div><strong>Standard — $999</strong><br><small>1 Affiliate Membership</small></div>
+            <div><strong>Silver — $1,499</strong><br><small>2 Affiliate Memberships</small></div>
+            <div><strong>Gold — $1,999</strong><br><small>3 Affiliate Memberships</small></div>
+            <div><strong>Platinum — $2,499</strong><br><small>4 Affiliate Memberships</small></div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h4>Questions?</h4>
+          <div class="team-member"><strong>Kathleen Thomas</strong><br>Sales Manager<br><a href="tel:2022162363">202-216-2363</a><br><a href="mailto:kthomas@asla.org">kthomas@asla.org</a></div>
+          <p style="margin-top:var(--space-md);font-size:13px;color:var(--fg2)">Or email <a href="mailto:sales@asla.org">sales@asla.org</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>Send by Mail or Fax</h4>
+          <p style="font-size:13px;color:var(--fg2)">ASLA, Attn: Sales Specialist<br>636 Eye Street NW<br>Washington, DC 20001 USA<br><br>Fax: 202-898-1185<br>Email: <a href="mailto:sales@asla.org">sales@asla.org</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand"><img src="assets/logos/asla-full-green-white.png" alt="American Society of Landscape Architects" height="22"><p>American Society of Landscape Architects<br>636 Eye Street NW, Washington, DC 20001</p></div>
+    <div class="footer-links">
+      <div><h5>Opportunities</h5><ul><li><a href="advertising.html">LAM Advertising</a></li><li><a href="advertising.html#digital-engagement">Digital Engagement</a></li><li><a href="expo.html">EXPO / Exhibit</a></li><li><a href="sponsorships.html">Sponsorships</a></li><li><a href="membership.html">Corporate Membership</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="advertising.html#editorial-calendar">Editorial Calendar</a></li><li><a href="advertising.html#ad-rates">Advertising Rates</a></li><li><a href="expo.html#exhibitor-resources">Exhibitor Resources</a></li><li><a href="advertising.html#product-directory">Product Directory</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="https://www.asla.org">ASLA.org</a></li><li><a href="https://www.landscapearchitecturemagazine.org">LAM Online</a></li><li><a href="https://www.facebook.com/americansocietyoflandscapearchitects">Facebook</a></li><li><a href="https://www.linkedin.com/company/american-society-of-landscape-architects/">LinkedIn</a></li><li><a href="https://www.instagram.com/nationalasla">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 American Society of Landscape Architects. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+<script>
+document.getElementById('applyForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var level = document.querySelector('input[name="memberLevel"]:checked');
+  if (!level) { alert('Please select a membership level.'); return; }
+  alert('Thank you for your application! Our team will contact you within 2 business days to finalize your membership and arrange payment.');
+});
+</script>
+</body>
+</html>
