@@ -1,0 +1,371 @@
+/* =============================================================================
+   ASLA Design System — Colors & Typography
+   American Society of Landscape Architects
+   =============================================================================
+   Source: styleguide/asla-style-guide.md (official ASLA style guide)
+   Mirrors token names used in frontend/tailwind.config.js and src/app/globals.css
+   ========================================================================== */
+
+/* JetBrains Mono (Google Fonts) — monospace for IDs, codes, meta.
+   @import must come before any @font-face or @rule to be valid. */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* ----------------------------------------------------------------------------
+   Webfonts — Retina (brand-licensed) is the primary ASLA typeface.
+   Family ships: ExLight 200 · Light 300 · Book 400 · Bold 700, each with italics
+   where available. RetinaCondensed covers narrow display use (eyebrows, metadata).
+   JetBrains Mono covers the handful of monospace needs (IDs, codes).
+   -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-ExLight.otf") format("opentype"),
+       url("fonts/Retina-ExLight.otf") format("opentype"),
+       url("fonts/Retina-ExLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-Light.otf") format("opentype"),
+       url("fonts/Retina-Light.otf") format("opentype"),
+       url("fonts/Retina-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-LightItalic.otf") format("opentype"),
+       url("fonts/Retina-LightItalic.otf") format("opentype"),
+       url("fonts/Retina-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-Book.otf") format("opentype"),
+       url("fonts/Retina-Book.otf") format("opentype"),
+       url("fonts/Retina-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-BookItalic.otf") format("opentype"),
+       url("fonts/Retina-BookItalic.otf") format("opentype"),
+       url("fonts/Retina-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-Bold.otf") format("opentype"),
+       url("fonts/Retina-Bold.otf") format("opentype"),
+       url("fonts/Retina-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina";
+  src: url("fonts/Retina-BoldItalic.otf") format("opentype"),
+       url("fonts/Retina-BoldItalic.otf") format("opentype"),
+       url("fonts/Retina-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Retina Condensed";
+  src: url("fonts/RetinaCondensedLight.otf") format("opentype"),
+       url("fonts/RetinaCondensedLight.otf") format("opentype"),
+       url("fonts/RetinaCondensedLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Retina Condensed";
+  src: url("fonts/RetinaCond-Bold.otf") format("opentype"),
+       url("fonts/RetinaCond-Bold.otf") format("opentype"),
+       url("fonts/RetinaCond-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Skolar Latin — editorial serif for long-form, quotes, callouts
+   Multiple src URLs so the CSS works at any depth: HTML at root uses
+   fonts/..., subfolders use ../fonts/..., deep (ui_kits/*) use ../../fonts/...
+   The browser tries each in order and uses the first that loads.   */
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-Light.otf") format("opentype"),
+       url("fonts/SkolarLatin-Light.otf") format("opentype"),
+       url("fonts/SkolarLatin-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-LightItalic.otf") format("opentype"),
+       url("fonts/SkolarLatin-LightItalic.otf") format("opentype"),
+       url("fonts/SkolarLatin-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-Regular.otf") format("opentype"),
+       url("fonts/SkolarLatin-Regular.otf") format("opentype"),
+       url("fonts/SkolarLatin-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-Italic.otf") format("opentype"),
+       url("fonts/SkolarLatin-Italic.otf") format("opentype"),
+       url("fonts/SkolarLatin-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-Bold.otf") format("opentype"),
+       url("fonts/SkolarLatin-Bold.otf") format("opentype"),
+       url("fonts/SkolarLatin-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Skolar";
+  src: url("fonts/SkolarLatin-BoldItalic.otf") format("opentype"),
+       url("fonts/SkolarLatin-BoldItalic.otf") format("opentype"),
+       url("fonts/SkolarLatin-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ── Brand colors ─────────────────────────────────────────────────────── */
+  --asla-teal:        #003A49;  /* Primary — buttons, headings on light, footer */
+  --asla-teal-light:  #0D4D5C;  /* Hover state of teal */
+  --asla-teal-hover:  #004D5E;
+  --asla-green:       #81BC00;  /* Accent — Join CTA, feature icons, highlights */
+  --asla-green-light: #95D600;
+  --asla-green-dark:  #6B9E00;
+
+  --warm-cream:       #F4F2ED;  /* Primary page background */
+  --soft-sage:        #E7EDDA;  /* Secondary BG, callouts, conference cards */
+  --sand:             #D4CFC1;  /* Muted accent — chart secondary, neutral fills */
+  --white:            #FFFFFF;
+
+  --charcoal:         #2D2D2D;  /* Primary body text */
+  --dark-gray:        #4A4A4A;  /* Secondary body text */
+  --border-gray:      #D0D0D0;  /* Input/card borders */
+  --grid-gray:        #E0E0E0;  /* Chart grid lines, dividers */
+  --placeholder-gray: #9E9E9E;  /* Input placeholders, muted */
+
+  --alert-red:        #E53935;  /* Deadlines, destructive, critical */
+  --muted-gold:       #C9A227;  /* Awards, highlights */
+  --success-green:    #28A745;  /* Success states (Next.js app) */
+
+  /* Data visualization palette (apply in order) */
+  --chart-1: #003A49;  /* ASLA Teal */
+  --chart-2: #E8E4DC;  /* Warm Gray */
+  --chart-3: #6B8BA3;  /* Slate Blue */
+  --chart-4: #5B9BD5;  /* Sky Blue */
+  --chart-5: #81BC00;  /* ASLA Green */
+  --chart-6: #C9A227;  /* Muted Gold */
+  --chart-7: #E53935;  /* Alert Red */
+
+  /* ── Semantic color tokens ────────────────────────────────────────────── */
+  --bg-page:       var(--warm-cream);
+  --bg-surface:    var(--white);
+  --bg-accent:     var(--soft-sage);
+  --bg-dark:       var(--asla-teal);
+
+  --fg1:           var(--charcoal);       /* Primary text */
+  --fg2:           var(--dark-gray);      /* Secondary text */
+  --fg3:           var(--placeholder-gray); /* Muted / placeholder */
+  --fg-on-dark:    var(--white);          /* Text on teal/photos */
+  --fg-link:       var(--asla-teal);      /* Text links */
+
+  --border-1:      var(--border-gray);
+  --border-2:      var(--grid-gray);
+
+  /* ── Typography ───────────────────────────────────────────────────────── */
+  --font-sans:      "Retina", "Gotham", "Proxima Nova",
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-condensed: "Retina Condensed", "Retina", -apple-system, sans-serif;
+  --font-serif:     "Skolar", "Skolar Latin", Georgia, "Times New Roman", serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: var(--font-sans);
+  --font-body:    var(--font-sans);
+
+  /* Base body size */
+  --fs-body:  16px;
+  --lh-body:  1.6;
+  --lh-tight: 1.2;
+
+  /* ── Spacing scale ────────────────────────────────────────────────────── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* ── Radii ────────────────────────────────────────────────────────────── */
+  --radius-xs:   4px;
+  --radius-sm:   8px;   /* Inputs, small cards */
+  --radius-md:   12px;  /* Image treatments */
+  --radius-lg:   16px;  /* Cards, feature blocks */
+  --radius-pill: 24px;  /* Buttons */
+  --radius-mixed-asymmetric: 0 24px 24px 0; /* Signature "mixed-radius" image treatment */
+
+  /* ── Shadows ──────────────────────────────────────────────────────────── */
+  --shadow-subtle: 0 2px 8px  rgba(0, 0, 0, 0.05);
+  --shadow-card:   0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-hover:  0 8px 24px rgba(0, 0, 0, 0.10);
+
+  /* ── Motion ───────────────────────────────────────────────────────────── */
+  --ease-out:   cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast:   150ms;
+  --dur-normal: 200ms;
+  --dur-slow:   300ms;
+
+  /* ── Layout ───────────────────────────────────────────────────────────── */
+  --content-max: 1200px;
+  --content-gutter: 24px;
+}
+
+/* =============================================================================
+   Semantic type classes — use these as shorthand for consistent hierarchy.
+   ========================================================================== */
+
+.h1, h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 4.5vw, 54px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--fg1);
+}
+
+.h2, h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--fg1);
+}
+
+.h3, h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--fg1);
+}
+
+.h4, h4 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--fg1);
+}
+
+.h5, h5 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--fg1);
+}
+
+.eyebrow {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg2);
+}
+
+.body-lg, p.body-lg {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--fg1);
+}
+
+.body, p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--fg1);
+}
+
+.body-sm, small {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--fg2);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--fg2);
+}
+
+.mono, code, kbd {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.serif, .editorial {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--fg1);
+}
+
+.pull-quote {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.35;
+  color: var(--fg1);
+  letter-spacing: -0.005em;
+}
+
+a {
+  color: var(--fg-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--asla-teal-light); }
