@@ -55,7 +55,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   letter-spacing: 0.08em;
 }
 
-.main-nav ul { list-style: none; display: flex; align-items: center; gap: 4px; }
+.main-nav > ul { list-style: none; display: flex; align-items: center; gap: 4px; }
 .main-nav a {
   color: rgba(255,255,255,0.85);
   text-decoration: none;
@@ -847,7 +847,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   }
   .main-nav.open { display: block; }
-  .main-nav ul { flex-direction: column; gap: 0; }
+  .main-nav > ul { flex-direction: column; gap: 0; }
   .main-nav li { width: 100%; }
   .main-nav a { display: block; padding: 12px 16px; }
   .has-dropdown.open > .dropdown { position: static; box-shadow: none; background: rgba(255,255,255,0.05); border-radius: var(--radius-sm); margin: 4px 0 4px 16px; }
