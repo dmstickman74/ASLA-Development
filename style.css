@@ -774,7 +774,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
 .footer-inner {}
 .footer-brand { margin-bottom: var(--space-2xl); }
 .footer-brand img { margin-bottom: var(--space-md); height: 56px; width: auto; }
-.footer-brand p { font-size: 14px; line-height: 1.6; }
+.footer-brand p { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.7) !important; }
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -802,6 +802,7 @@ a { transition: color var(--dur-fast) var(--ease-out); }
   border-top: 1px solid rgba(255,255,255,0.1);
   font-size: 13px;
 }
+.footer-bottom p { color: rgba(255,255,255,0.5) !important; }
 
 /* ── Back to Top ───────────────────────────────────────────────────────────── */
 .back-to-top {
